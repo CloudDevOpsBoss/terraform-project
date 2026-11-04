@@ -16,5 +16,13 @@ steps:
     inputs:
        terraformVersion: 'latest'
 
-
+  - task: TerraformTaskV4@4
+    inputs:
+       provider: 'azurerm'
+       command: 'init'
+       backendServiceArm: 'Terrafrom_Ado'
+       backendAzureRmResourceGroupName: demo-rg5
+       backendAzureRmStorageAccountName: ''
+       backendAzureRmContainerName: 'tfstate'
+       backendAzureRmKey: 'terraform.tfstate'
   
