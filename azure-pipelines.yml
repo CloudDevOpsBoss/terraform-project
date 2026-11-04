@@ -9,7 +9,7 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 variables:
-   -group: terraform-variable-group
+   - group: terraform-variable-group
 
 steps:
 - script: echo Hello, world!
