@@ -26,3 +26,14 @@ steps:
        backendAzureRmContainerName: 'tfstate'
        backendAzureRmKey: 'terraform.tfstate'
   
+  - task: TerraformTaskV4@4
+    inputs:
+       provider: 'azurerm'
+       command: 'plan'
+       #environmentServiceNameAzureRM: 'Terrafrom_Ado'
+  - task: TerraformTaskV4@4
+    inputs:
+       provider: 'azurerm'
+       command: 'apply'
+       #environmentServiceNameAzureRM: 'Terraform_Ado'
+       
