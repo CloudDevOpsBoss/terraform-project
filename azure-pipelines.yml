@@ -21,8 +21,8 @@ steps:
        provider: 'azurerm'
        command: 'init'
        backendServiceArm: 'Terrafrom_Ado'
-       backendAzureRmResourceGroupName: demo-rg5
-       backendAzureRmStorageAccountName: ''
+       #backendAzureRmResourceGroupName: demo-rg5
+       #backendAzureRmStorageAccountName: ''
        backendAzureRmContainerName: 'tfstate'
        backendAzureRmKey: 'terraform.tfstate'
   
@@ -36,5 +36,5 @@ steps:
        provider: 'azurerm'
        command: 'apply'
        #environmentServiceNameAzureRM: 'Terraform_Ado'
-       
+
        
